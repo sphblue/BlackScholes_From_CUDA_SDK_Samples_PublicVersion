@@ -1,0 +1,16 @@
+[
+    {
+        "command": "nvcc -c  -I/nfs/pdx/home/shong6/NVIDIA_CUDA_11.3_Samples/common/inc -m64 -allow-unsupported-compiler -o BlackScholes.o -D__CUDACC__=1 BlackScholes.cu",
+        "directory": "/nfs/pdx/home/shong6/Workloads/FSI_DPCT/BlackScholes/BlackScholes_CUDA-SDK11.3_Modified_updated",
+        "file": "/nfs/pdx/home/shong6/Workloads/FSI_DPCT/BlackScholes/BlackScholes_CUDA-SDK11.3_Modified_updated/BlackScholes.cu"
+    },
+    {
+        "command": "nvcc -c  -I/nfs/pdx/home/shong6/NVIDIA_CUDA_11.3_Samples/common/inc -m64 -allow-unsupported-compiler -o BlackScholes_gold.o -D__CUDACC__=1 BlackScholes_gold.cpp",
+        "directory": "/nfs/pdx/home/shong6/Workloads/FSI_DPCT/BlackScholes/BlackScholes_CUDA-SDK11.3_Modified_updated",
+        "file": "/nfs/pdx/home/shong6/Workloads/FSI_DPCT/BlackScholes/BlackScholes_CUDA-SDK11.3_Modified_updated/BlackScholes_gold.cpp"
+    },
+    {
+        "command": "nvcc  -m64 -o BlackScholes BlackScholes.o BlackScholes_gold.o -D__CUDACC__=1",
+        "directory": "/nfs/pdx/home/shong6/Workloads/FSI_DPCT/BlackScholes/BlackScholes_CUDA-SDK11.3_Modified_updated"
+    }
+]
